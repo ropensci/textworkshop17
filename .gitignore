@@ -3,4 +3,6 @@
 style/old_main.css
 .Rproj.user
 *.Rproj
+.Rhistory
+
 
