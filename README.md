@@ -1,27 +1,32 @@
-# rOpenSci 2017 unconference
-__(invitation only), May 25 - 26, 2017. Los Angeles__
+# Text Analysis R Developers' Workshop
+__(invitation only), April 21 - 22, 2017. London__
 
+Assisted by 
 ![](http://i.imgur.com/TTnpSYS.png)
 
-Welcome to the repository for the 2017 unconference.  rOpenSci will be hosting its third major developer meeting and open science hackathon in San Francisco in March.
+and
+![](http://www.lse.ac.uk/seds/wp-content/uploads/2016/08/retina-logo.jpg)
 
-* [Participants](http://unconf17.ropensci.org/#participants)  
-* Logistics *link to come*  
-* Please post ideas for projects, discussion topics, and sessions as [issues](https://github.com/ropensci/unconf/issues/) and move to the wiki and/or a new repo within rOpenSci's account as needed.
 
-Event hashtag is `#runconf17`
+Welcome to the repository for the Text Analysis R Developers' Workshop.  This event is supported by European Research Council grant ERC-2011-StG 283794-QUANTESS and the LSE's [Social and Economic Data Sciences](http://lse.ac.uk/seds/) unit.  
 
-__Remote participants__  
-For those interested in participating remotely, please email `remote-hacker at ropensci.org` for an invite to our chat room (but also just watch the repo for discussion happening in the issues).
+* [Participants](http://textworkshop17.ropensci.org/#participants)  
+* [Schedule](http://textworkshop17.ropensci.org/#schedule)
+* [Please post ideas for projects, discussion topics, and sessions as [issues](https://github.com/ropensci/textworkshop17/issues).  These can be suggestions of any kind, things you would like to work on or discuss, questions for other participants, etc.
+
+Event hashtag is `#RtextSIG17`
+
 
 ## Code of conduct
 
-To ensure a safe, enjoyable, and friendly experience for everyone who participates, we have a [code of conduct](http://unconf17.ropensci.org/coc.html).  This applies to people attending in person or remotely, and for interacting over the [issues](https://github.com/ropensci17/issues).
+To ensure a safe, enjoyable, and friendly experience for everyone who participates, we have a [code of conduct](http://textworkshop17.ropensci.org/coc.html).  This applies to people attending in person or remotely, and for interacting over the [issues](https://github.com/ropensci/textworkshop17/issues).
 
 ## Support  
-This meeting is made possible by generous support from:
 
-- The Helmsley Charitable Trust
-- Microsoft
-- Data Camp
+This meeting is made possible by generous support (financial, moral, and technical) from:
+
+- European Research Council grant ERC-2011-StG 283794-QUANTESS
+- [rOpenSci](http://ropensci.org)
+- LSE's [Social and Economic Data Sciences](http://lse.ac.uk/seds/) unit
+- LSE's [Department of Methodology](http://www.lse.ac.uk/methodology)
 
