@@ -17,6 +17,17 @@ Arthur Spirling
 - Associate Professor of Politics and Data Science, New York University
 - packages: https://cran.r-project.org/web/packages/preText/
 
+Thomas Leeper
+- Thomas Leeper is Assistant Professor in Political Behaviour in the Government Department at the London School of Economics. He is an R hacker, survey-experimental methodologist, and public opinion researcher who has written
+- packages: more than 30 R packages, including two text-related packages for crowdsourcing (MTurkR and crowdflower)
+- http://www.thomasleeper.com, https://github.com/leeper/
+
+Sebastian Barfort
+- LSE
+- http://sebastianbarfort.github.io
+- No public packages worth mentioning. I have spent the last 5 years working on the internal servers at Statistics Denmark, but the packages I created there (mostly panel data stuff) can’t be moved outside the servers.
+
+
 Of course we could add the others, without photos at this stage...
 
 ## Attending
