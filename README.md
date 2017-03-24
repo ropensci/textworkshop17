@@ -6,7 +6,7 @@ Assisted by
 
 and
 
-<img src = "http://www.lse.ac.uk/seds/wp-content/uploads/2016/08/retina-logo.jpg" alt="SEDS logo" style="width: 200px;">
+<img src = "http://www.lse.ac.uk/seds/wp-content/uploads/2016/08/retina-logo.jpg" alt="SEDS logo" style="width: 80px;">
 
 
 Welcome to the repository for the Text Analysis R Developers' Workshop.  This event is supported by European Research Council grant ERC-2011-StG 283794-QUANTESS and the LSE's [Social and Economic Data Sciences](http://lse.ac.uk/seds/) unit.  
