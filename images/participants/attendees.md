@@ -30,6 +30,7 @@ They can sign up for the Slack team at https://ropensci.signup.team/
 - Adam Obeng	readtext	adam@adamobeng.com
 - m.eik michalke	koRpus	meik.michalke@hhu.de
 - Tyler Rinker	qdap	tyler.rinker@gmail.com
+- Heewon Jeon	KoNLP	madjakarta@gmail.com
 
 ### Still have not joined Slack
 
@@ -37,7 +38,6 @@ They can sign up for the Slack team at https://ropensci.signup.team/
 - Akitaka Matsuo	spacyR	A.Matsuo@lse.ac.uk
 - Sebastian Barfort	misc	s.barfort@lse.ac.uk
 - Brandon Stewart	stm	bms4@princeton.edu
-- Heewon Jeon	KoNLP	madjakarta@gmail.com
 - Ingo Feinerer	tm	feinerer@logic.at
 - Marek Gagolewski	stringi	gagolews@rexamine.com
 - Taylor Arnold	cleanNLP	taylor.arnold@acm.org
