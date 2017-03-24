@@ -2,11 +2,9 @@
 __(invitation only), April 21 - 22, 2017. London__
 
 Assisted by 
-![](http://i.imgur.com/TTnpSYS.png)
-
+<img src = "http://i.imgur.com/TTnpSYS.png" alt = "rOpenSci logo" width = 150>
 and
-
-<img src = "http://www.lse.ac.uk/seds/wp-content/uploads/2016/08/retina-logo.jpg" alt="SEDS logo" style="width: 80px;">
+<img src = "http://www.lse.ac.uk/seds/wp-content/uploads/2016/08/retina-logo.jpg" alt = "SEDS logo" width = 150>
 
 
 Welcome to the repository for the Text Analysis R Developers' Workshop.  This event is supported by European Research Council grant ERC-2011-StG 283794-QUANTESS and the LSE's [Social and Economic Data Sciences](http://lse.ac.uk/seds/) unit.  
