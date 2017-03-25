@@ -27,6 +27,10 @@ Sebastian Barfort
 - http://sebastianbarfort.github.io
 - No public packages worth mentioning. I have spent the last 5 years working on the internal servers at Statistics Denmark, but the packages I created there (mostly panel data stuff) can’t be moved outside the servers.
 
+Kevin Munger
+- NYU
+- Kevin Munger is PhD student at NYU working on social media and experimental and text methods.
+- www.kevinmunger.com
 
 Of course we could add the others, without photos at this stage...
 
