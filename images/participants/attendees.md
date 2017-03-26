@@ -32,6 +32,11 @@ Kevin Munger
 - Kevin Munger is PhD student at NYU working on social media and experimental and text methods.
 - www.kevinmunger.com
 
+Taylor Arnold
+- link: http://statsmaths.github.io/
+- affiliation: Assistant Professor of Statistics at the University of Richmond (please edit down as you need to)
+- relevant packages: cleanNLP, kerasR
+
 Of course we could add the others, without photos at this stage...
 
 ## Attending
