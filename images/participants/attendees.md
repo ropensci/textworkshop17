@@ -2,6 +2,33 @@
 
 (Photos are named `firstname-lastname.jpg`)
 
+
+### Already added
+
+Ken
+
+Jeroen
+
+Lincoln Mullen
+- My URL: http://lincolnmullen.com
+- Blurb: Lincoln Mullen is an assistant professor of American religious history and digital history at George Mason University.
+- Packages: tokenizers, textreuse
+
+Matt Denny
+- website: http://www.mjdenny.com/, github: https://github.com/matthewjdenny
+- PhD Candidate in Political Science and Social Data Analytics at Penn State
+- relevant packages: preText, phrasemachine
+
+Arthur Spirling
+- website: http://www.nyu.edu/projects/spirling/
+- Associate Professor of Politics and Data Science, New York University
+- packages: https://cran.r-project.org/web/packages/preText/
+
+Thomas Leeper
+- Thomas Leeper is Assistant Professor in Political Behaviour in the Government Department at the London School of Economics. He is an R hacker, survey-experimental methodologist, and public opinion researcher who has written
+- packages: more than 30 R packages, including two text-related packages for crowdsourcing (MTurkR and crowdflower)
+- http://www.thomasleeper.com, https://github.com/leeper/
+
 Sebastian Barfort
 - LSE
 - http://sebastianbarfort.github.io
@@ -65,24 +92,3 @@ They can sign up for the Slack team at https://ropensci.signup.team/
 - Kurt Hornik	tm/openNLP.RWeka	Kurt.Hornik@R-project.org
 
 
-## Already added
-
-Lincoln Mullen
-- My URL: http://lincolnmullen.com
-- Blurb: Lincoln Mullen is an assistant professor of American religious history and digital history at George Mason University.
-- Packages: tokenizers, textreuse
-
-Matt Denny
-- website: http://www.mjdenny.com/, github: https://github.com/matthewjdenny
-- PhD Candidate in Political Science and Social Data Analytics at Penn State
-- relevant packages: preText, phrasemachine
-
-Arthur Spirling
-- website: http://www.nyu.edu/projects/spirling/
-- Associate Professor of Politics and Data Science, New York University
-- packages: https://cran.r-project.org/web/packages/preText/
-
-Thomas Leeper
-- Thomas Leeper is Assistant Professor in Political Behaviour in the Government Department at the London School of Economics. He is an R hacker, survey-experimental methodologist, and public opinion researcher who has written
-- packages: more than 30 R packages, including two text-related packages for crowdsourcing (MTurkR and crowdflower)
-- http://www.thomasleeper.com, https://github.com/leeper/
