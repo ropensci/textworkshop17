@@ -1,9 +1,56 @@
-## Participants who have supplied the information that needs adding to the page
+## Attending
 
-(Photos are named `firstname-lastname.jpg`)
+| Added | Name | package(s) | email |
+|:------:| ---|:----|:------| 
+| + | Ken Benoit |   quanteda |  kbenoit@lse.ac.uk |
+| + | Jeroen Ooms  | hunspell |   jeroenooms@gmail.com |
+| + | Thomas Leeper | MTurkR | thosjleeper@gmail.com |
+| + | Kevin Munger | (sophistication) | km2713@nyu.edu |
+| + | Sebastian Barfort | misc | s.barfort@lse.ac.uk |
+| + | Taylor Arnold | cleanNLP | taylor.arnold@acm.org |
+| + | Matt Denny | phrasemachine/preText | mdenny@psu.edu |
+| + | Arthur Spirling | preText | arthur.spirling@nyu.edu |
+|  | Haiyan Wang | quanteda | H.Wang52@lse.ac.uk |
+|  | Adam Obeng | readtext | adam@adamobeng.com |
+|  | m.eik michalke | koRpus | meik.michalke@hhu.de |
+|  | Tyler Rinker | qdap | tyler.rinker@gmail.com |
+|  | Heewon Jeon | KoNLP | madjakarta@gmail.com |
+|  | Will Lowe | austin | wlowe@princeton.edu |
+|  | Kasper Welbers |  corpustools/semnet/rnewsflow | kasperwelbers@gmail.com |
+|  | Brandon Stewart  | stm | bms4@princeton.edu |
+|  | Ingo Feinerer | tm | feinerer@logic.at |
+|  | Marek Gagolewski |   stringi | gagolews@rexamine.com |
+|  | Dmitriy Selivanov  | text2vec | selivanov.dmitriy@gmail.com |
+|  | Patrick Perry |  textscaling | pperry@stern.nyu.edu |
+|  | Kohei Watanabe |  quanteda | K.Watanabe1@lse.ac.uk |
+|  | Akitaka Matsuo |  spacyR |  A.Matsuo@lse.ac.uk  |
+|  | Paul Nulty |  quanteda |  paul.nulty@gmail.com |
+
+(`+` means they are on the web page already)
 
 
-### Already added
+## Invited but not attending
+
+(* indicates they are on the Slack team/channel)
+
+- *Hadley Wickham	stringr	hadley@rstudio.com
+- *Julia Silge	tidytext	julia.silge@gmail.com
+- *David Robinson	tidytext	drobinson@stackoverflow.com
+- *Pablo Barbera	twitteR	pbarbera@usc.edu
+- Ben Schmidt	wordVectors	bmschmidt@gmail.com
+- Carson Sievert	LDAvis	cpsievert1@gmail.com
+- Matt Taddy	textir	taddy@microsoft.com
+- Wouter van Atteveldt		wouter@vanatteveldt.com
+- Ian Fellows	wordcloud	ian@fellstat.com
+- R. H. Baayen	languageR	harald.baayen@uni-tuebingen.de
+- Kurt Hornik	tm/openNLP.RWeka	Kurt.Hornik@R-project.org
+
+
+## For the web page
+
+### Information to add
+
+### Information already added
 
 Ken
 
@@ -46,49 +93,6 @@ Taylor Arnold
 
 Of course we could add the others, without photos at this stage...
 
-## Attending
 
-They can sign up for the Slack team at https://ropensci.signup.team/
-
-### On Slack
-
-- Haiyan Wang	quanteda	H.Wang52@lse.ac.uk
-- Thomas Leeper	MTurkR	thosjleeper@gmail.com
-- Adam Obeng	readtext	adam@adamobeng.com
-- m.eik michalke	koRpus	meik.michalke@hhu.de
-- Tyler Rinker	qdap	tyler.rinker@gmail.com
-- Heewon Jeon	KoNLP	madjakarta@gmail.com
-- Will Lowe	austin	wlowe@princeton.edu
-- Kasper Welbers	corpustools/semnet/rnewsflow	kasperwelbers@gmail.com
-- Kevin Munger	(sophistication)	km2713@nyu.edu
-- Sebastian Barfort	misc	s.barfort@lse.ac.uk
-- Brandon Stewart	stm	bms4@princeton.edu
-- Ingo Feinerer	tm	feinerer@logic.at
-- Marek Gagolewski	stringi	gagolews@rexamine.com
-- Taylor Arnold	cleanNLP	taylor.arnold@acm.org
-- Dmitriy Selivanov	text2vec	selivanov.dmitriy@gmail.com
-- Patrick Perry	textscaling	pperry@stern.nyu.edu
-
-### Still have not joined Slack
-
-- Kohei Watanabe	quanteda	K.Watanabe1@lse.ac.uk
-- Akitaka Matsuo	spacyR	A.Matsuo@lse.ac.uk
-- Paul Nulty	quanteda	paul.nulty@gmail.com
-
-## Invited but not attending
-
-(* indicates they are on the Slack team/channel)
-
-- *Hadley Wickham	stringr	hadley@rstudio.com
-- *Julia Silge	tidytext	julia.silge@gmail.com
-- *David Robinson	tidytext	drobinson@stackoverflow.com
-- *Pablo Barbera	twitteR	pbarbera@usc.edu
-- Ben Schmidt	wordVectors	bmschmidt@gmail.com
-- Carson Sievert	LDAvis	cpsievert1@gmail.com
-- Matt Taddy	textir	taddy@microsoft.com
-- Wouter van Atteveldt		wouter@vanatteveldt.com
-- Ian Fellows	wordcloud	ian@fellstat.com
-- R. H. Baayen	languageR	harald.baayen@uni-tuebingen.de
-- Kurt Hornik	tm/openNLP.RWeka	Kurt.Hornik@R-project.org
 
 
