@@ -2,26 +2,6 @@
 
 (Photos are named `firstname-lastname.jpg`)
 
-Lincoln Mullen
-- My URL: http://lincolnmullen.com
-- Blurb: Lincoln Mullen is an assistant professor of American religious history and digital history at George Mason University.
-- Packages: tokenizers, textreuse
-
-Matt Denny
-- website: http://www.mjdenny.com/, github: https://github.com/matthewjdenny
-- PhD Candidate in Political Science and Social Data Analytics at Penn State
-- relevant packages: preText, phrasemachine
-
-Arthur Spirling
-- website: http://www.nyu.edu/projects/spirling/
-- Associate Professor of Politics and Data Science, New York University
-- packages: https://cran.r-project.org/web/packages/preText/
-
-Thomas Leeper
-- Thomas Leeper is Assistant Professor in Political Behaviour in the Government Department at the London School of Economics. He is an R hacker, survey-experimental methodologist, and public opinion researcher who has written
-- packages: more than 30 R packages, including two text-related packages for crowdsourcing (MTurkR and crowdflower)
-- http://www.thomasleeper.com, https://github.com/leeper/
-
 Sebastian Barfort
 - LSE
 - http://sebastianbarfort.github.io
@@ -43,7 +23,7 @@ Of course we could add the others, without photos at this stage...
 
 They can sign up for the Slack team at https://ropensci.signup.team/
 
-### On Slack
+### On Slack
 
 - Haiyan Wang	quanteda	H.Wang52@lse.ac.uk
 - Thomas Leeper	MTurkR	thosjleeper@gmail.com
@@ -51,11 +31,9 @@ They can sign up for the Slack team at https://ropensci.signup.team/
 - m.eik michalke	koRpus	meik.michalke@hhu.de
 - Tyler Rinker	qdap	tyler.rinker@gmail.com
 - Heewon Jeon	KoNLP	madjakarta@gmail.com
-
-### Still have not joined Slack
-
-- Kohei Watanabe	quanteda	K.Watanabe1@lse.ac.uk
-- Akitaka Matsuo	spacyR	A.Matsuo@lse.ac.uk
+- Will Lowe	austin	wlowe@princeton.edu
+- Kasper Welbers	corpustools/semnet/rnewsflow	kasperwelbers@gmail.com
+- Kevin Munger	(sophistication)	km2713@nyu.edu
 - Sebastian Barfort	misc	s.barfort@lse.ac.uk
 - Brandon Stewart	stm	bms4@princeton.edu
 - Ingo Feinerer	tm	feinerer@logic.at
@@ -63,10 +41,12 @@ They can sign up for the Slack team at https://ropensci.signup.team/
 - Taylor Arnold	cleanNLP	taylor.arnold@acm.org
 - Dmitriy Selivanov	text2vec	selivanov.dmitriy@gmail.com
 - Patrick Perry	textscaling	pperry@stern.nyu.edu
+
+### Still have not joined Slack
+
+- Kohei Watanabe	quanteda	K.Watanabe1@lse.ac.uk
+- Akitaka Matsuo	spacyR	A.Matsuo@lse.ac.uk
 - Paul Nulty	quanteda	paul.nulty@gmail.com
-- Will Lowe	austin	wlowe@princeton.edu
-- Kasper Welbers	corpustools/semnet/rnewsflow	kasperwelbers@gmail.com
-- Kevin Munger	(sophistication)	km2713@nyu.edu
 
 ## Invited but not attending
 
@@ -83,3 +63,26 @@ They can sign up for the Slack team at https://ropensci.signup.team/
 - Ian Fellows	wordcloud	ian@fellstat.com
 - R. H. Baayen	languageR	harald.baayen@uni-tuebingen.de
 - Kurt Hornik	tm/openNLP.RWeka	Kurt.Hornik@R-project.org
+
+
+## Already added
+
+Lincoln Mullen
+- My URL: http://lincolnmullen.com
+- Blurb: Lincoln Mullen is an assistant professor of American religious history and digital history at George Mason University.
+- Packages: tokenizers, textreuse
+
+Matt Denny
+- website: http://www.mjdenny.com/, github: https://github.com/matthewjdenny
+- PhD Candidate in Political Science and Social Data Analytics at Penn State
+- relevant packages: preText, phrasemachine
+
+Arthur Spirling
+- website: http://www.nyu.edu/projects/spirling/
+- Associate Professor of Politics and Data Science, New York University
+- packages: https://cran.r-project.org/web/packages/preText/
+
+Thomas Leeper
+- Thomas Leeper is Assistant Professor in Political Behaviour in the Government Department at the London School of Economics. He is an R hacker, survey-experimental methodologist, and public opinion researcher who has written
+- packages: more than 30 R packages, including two text-related packages for crowdsourcing (MTurkR and crowdflower)
+- http://www.thomasleeper.com, https://github.com/leeper/

@@ -12,6 +12,18 @@
   background: url("../../images/participants/lincoln-mullen.jpg") no-repeat;
   background-size: cover; }
 
+.matt-denny .participant-image {
+  background: url("../../images/participants/matt-denny.jpg") no-repeat;
+  background-size: cover; }
+
+.arthur-spirling .participant-image {
+  background: url("../../images/participants/arthur-spirling.jpg") no-repeat;
+  background-size: cover; }
+
+.thomas-leeper .participant-image {
+  background: url("../../images/participants/thomas-leeper.jpg") no-repeat;
+  background-size: cover; }
+
 
 /*To add new participants, create a class like the ones above.
 Use .firstname-lastname
