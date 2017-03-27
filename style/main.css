@@ -38,12 +38,26 @@
 
 
 .ingo-feinerer .participant-image {
-  background: url("../../images/participants/ingo-feinerer.jpg") no-repeat;
+  background: url("../../images/participants/ingo-feinerer.png") no-repeat;
   background-size: cover; }
 
-.kaspar-welbers .participant-image {
-  background: url("../../images/participants/kaspar-welbers.jpg") no-repeat;
+.kasper-welbers .participant-image {
+  background: url("../../images/participants/kasper-welbers.jpg") no-repeat;
   background-size: cover; }
+
+.adam-obeng .participant-image {
+  background: url("../../images/participants/adam-obeng.png") no-repeat;
+  background-size: cover; }
+
+
+.meik-michalke .participant-image {
+  background: url("../../images/participants/meik-michalke.png") no-repeat;
+  background-size: cover; }
+
+.marek-gagolewski .participant-image {
+  background: url("../../images/participants/marek-gagolewski.png") no-repeat;
+  background-size: cover; }
+
 
 
 /*To add new participants, create a class like the ones above.
