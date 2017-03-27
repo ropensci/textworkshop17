@@ -55,6 +55,11 @@ Info Feinerer
 - University of Applied Sciences Wiener Neustadt
 - tm (http://tm.r-forge.r-project.org/)
 
+Kaspar Welbers
+- https://github.com/kasperwelbers/
+- University of Leuven
+- corpustools  https://github.com/kasperwelbers/corpustools/
+
 
 ### Information already added
 
