@@ -50,7 +50,7 @@
 
 ### Information to add
 
-Info Feinerer
+Ingo Feinerer
 - https://github.com/feinerer
 - University of Applied Sciences Wiener Neustadt
 - tm (http://tm.r-forge.r-project.org/)

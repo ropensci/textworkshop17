@@ -37,6 +37,15 @@
   background-size: cover; }
 
 
+.ingo-feinerer .participant-image {
+  background: url("../../images/participants/ingo-feinerer.jpg") no-repeat;
+  background-size: cover; }
+
+.kaspar-welbers .participant-image {
+  background: url("../../images/participants/kaspar-welbers.jpg") no-repeat;
+  background-size: cover; }
+
+
 /*To add new participants, create a class like the ones above.
 Use .firstname-lastname
 Drop the image in the participants folder and link to either the png or jpg versions. gifs are also fine*/
