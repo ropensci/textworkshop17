@@ -1,7 +1,7 @@
 ## Attending
 
 | Added | Name | package(s) | email |
-|:------:| ---|:----|:------| 
+|:------:| ---|:----|:------|
 | + | Ken Benoit |   quanteda |  kbenoit@lse.ac.uk |
 | + | Jeroen Ooms  | hunspell |   jeroenooms@gmail.com |
 | + | Thomas Leeper | MTurkR | thosjleeper@gmail.com |
@@ -33,10 +33,10 @@
 
 (* indicates they are on the Slack team/channel)
 
-- *Hadley Wickham	stringr	hadley@rstudio.com
-- *Julia Silge	tidytext	julia.silge@gmail.com
-- *David Robinson	tidytext	drobinson@stackoverflow.com
-- *Pablo Barbera	twitteR	pbarbera@usc.edu
+- * Hadley Wickham	stringr	hadley@rstudio.com
+- * Julia Silge	tidytext	julia.silge@gmail.com
+- * David Robinson	tidytext	drobinson@stackoverflow.com
+- * Pablo Barbera	twitteR	pbarbera@usc.edu
 - Ben Schmidt	wordVectors	bmschmidt@gmail.com
 - Carson Sievert	LDAvis	cpsievert1@gmail.com
 - Matt Taddy	textir	taddy@microsoft.com
@@ -49,6 +49,12 @@
 ## For the web page
 
 ### Information to add
+
+Info Feinerer
+- https://github.com/feinerer
+- University of Applied Sciences Wiener Neustadt
+- tm (http://tm.r-forge.r-project.org/)
+
 
 ### Information already added
 
@@ -92,7 +98,3 @@ Taylor Arnold
 - relevant packages: cleanNLP, kerasR
 
 Of course we could add the others, without photos at this stage...
-
-
-
-
