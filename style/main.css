@@ -8,6 +8,9 @@
   background: url("../../images/participants/ken-benoit.jpg") no-repeat;
   background-size: cover; }
 
+.lincoln-mullen .participant-image {
+  background: url("../../images/participants/lincoln-mullen.jpg") no-repeat;
+  background-size: cover; }
 
 
 /*To add new participants, create a class like the ones above.
