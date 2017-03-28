@@ -10,16 +10,16 @@
 | + | Taylor Arnold | cleanNLP | taylor.arnold@acm.org |
 | + | Matt Denny | phrasemachine/preText | mdenny@psu.edu |
 | + | Arthur Spirling | preText | arthur.spirling@nyu.edu |
+| + | Adam Obeng | readtext | adam@adamobeng.com |
+| + | m.eik michalke | koRpus | meik.michalke@hhu.de |
+| + | Will Lowe | austin | wlowe@princeton.edu |
+| + | Kasper Welbers |  corpustools/semnet/rnewsflow | kasperwelbers@gmail.com |
+| + | Ingo Feinerer | tm | feinerer@logic.at |
+| + | Marek Gagolewski |   stringi | gagolews@rexamine.com |
 |  | Haiyan Wang | quanteda | H.Wang52@lse.ac.uk |
-|  | Adam Obeng | readtext | adam@adamobeng.com |
-|  | m.eik michalke | koRpus | meik.michalke@hhu.de |
 |  | Tyler Rinker | qdap | tyler.rinker@gmail.com |
 |  | Heewon Jeon | KoNLP | madjakarta@gmail.com |
-|  | Will Lowe | austin | wlowe@princeton.edu |
-|  | Kasper Welbers |  corpustools/semnet/rnewsflow | kasperwelbers@gmail.com |
 |  | Brandon Stewart  | stm | bms4@princeton.edu |
-|  | Ingo Feinerer | tm | feinerer@logic.at |
-|  | Marek Gagolewski |   stringi | gagolews@rexamine.com |
 |  | Dmitriy Selivanov  | text2vec | selivanov.dmitriy@gmail.com |
 |  | Patrick Perry |  textscaling | pperry@stern.nyu.edu |
 |  | Kohei Watanabe |  quanteda | K.Watanabe1@lse.ac.uk |
