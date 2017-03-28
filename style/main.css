@@ -62,6 +62,9 @@
   background: url("../../images/participants/will-lowe.jpg") no-repeat;
   background-size: cover; }
 
+.patrick-perry .participant-image {
+    background: url("../../images/participants/patrick-perry.jpg") no-repeat;
+    background-size: cover; }
 
 /*To add new participants, create a class like the ones above.
 Use .firstname-lastname

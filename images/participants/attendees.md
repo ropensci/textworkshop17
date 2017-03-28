@@ -16,12 +16,12 @@
 | + | Kasper Welbers |  corpustools/semnet/rnewsflow | kasperwelbers@gmail.com |
 | + | Ingo Feinerer | tm | feinerer@logic.at |
 | + | Marek Gagolewski |   stringi | gagolews@rexamine.com |
+| + | Patrick Perry |  textscaling | pperry@stern.nyu.edu |
 |  | Haiyan Wang | quanteda | H.Wang52@lse.ac.uk |
 |  | Tyler Rinker | qdap | tyler.rinker@gmail.com |
 |  | Heewon Jeon | KoNLP | madjakarta@gmail.com |
 |  | Brandon Stewart  | stm | bms4@princeton.edu |
 |  | Dmitriy Selivanov  | text2vec | selivanov.dmitriy@gmail.com |
-|  | Patrick Perry |  textscaling | pperry@stern.nyu.edu |
 |  | Kohei Watanabe |  quanteda | K.Watanabe1@lse.ac.uk |
 |  | Akitaka Matsuo |  spacyR |  A.Matsuo@lse.ac.uk  |
 |  | Paul Nulty |  quanteda |  paul.nulty@gmail.com |
