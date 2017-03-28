@@ -58,6 +58,9 @@
   background: url("../../images/participants/marek-gagolewski.png") no-repeat;
   background-size: cover; }
 
+.will-lowe .participant-image {
+  background: url("../../images/participants/will-lowe.jpg") no-repeat;
+  background-size: cover; }
 
 
 /*To add new participants, create a class like the ones above.
