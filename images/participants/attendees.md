@@ -17,9 +17,9 @@
 | + | Ingo Feinerer | tm | feinerer@logic.at |
 | + | Marek Gagolewski |   stringi | gagolews@rexamine.com |
 | + | Patrick Perry |  textscaling | pperry@stern.nyu.edu |
-|  | Haiyan Wang | quanteda | H.Wang52@lse.ac.uk |
+| + | Haiyan Wang | quanteda | H.Wang52@lse.ac.uk |
+| + | Heewon Jeon | KoNLP | madjakarta@gmail.com |
 |  | Tyler Rinker | qdap | tyler.rinker@gmail.com |
-|  | Heewon Jeon | KoNLP | madjakarta@gmail.com |
 |  | Brandon Stewart  | stm | bms4@princeton.edu |
 |  | Dmitriy Selivanov  | text2vec | selivanov.dmitriy@gmail.com |
 |  | Kohei Watanabe |  quanteda | K.Watanabe1@lse.ac.uk |

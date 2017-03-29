@@ -66,6 +66,16 @@
     background: url("../../images/participants/patrick-perry.jpg") no-repeat;
     background-size: cover; }
 
+.haiyan-wang .participant-image {
+    background: url("../../images/participants/haiyan-wang.jpg") no-repeat;
+    background-size: cover; }
+
+.heewon-jeon .participant-image {
+    background: url("../../images/participants/heewon-jeon.jpg") no-repeat;
+    background-size: cover; }
+
+
+
 /*To add new participants, create a class like the ones above.
 Use .firstname-lastname
 Drop the image in the participants folder and link to either the png or jpg versions. gifs are also fine*/
