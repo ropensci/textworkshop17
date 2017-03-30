@@ -78,6 +78,27 @@
     background: url("../../images/participants/brandon-stewart.jpg") no-repeat;
     background-size: cover; }
 
+.tyler-rinker .participant-image {
+    background: url("../../images/participants/tyler-rinker.png") no-repeat;
+    background-size: cover; }
+
+.dmitriy-selivanov .participant-image {
+    background: url("../../images/participants/dmitriy-selivanov.png") no-repeat;
+    background-size: cover; }
+
+.akitaka-matsuo .participant-image {
+    background: url("../../images/participants/akitaka-matsuo.png") no-repeat;
+    background-size: cover; }
+
+.paul-nulty .participant-image {
+    background: url("../../images/participants/paul-nulty.png") no-repeat;
+    background-size: cover; }
+
+.kohei-watanabe .participant-image {
+    background: url("../../images/participants/kohei-watanabe.png") no-repeat;
+    background-size: cover; }
+
+
 
 /*To add new participants, create a class like the ones above.
 Use .firstname-lastname
