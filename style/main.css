@@ -74,6 +74,9 @@
     background: url("../../images/participants/heewon-jeon.jpg") no-repeat;
     background-size: cover; }
 
+.brandon-stewart .participant-image {
+    background: url("../../images/participants/brandon-stewart.jpg") no-repeat;
+    background-size: cover; }
 
 
 /*To add new participants, create a class like the ones above.
