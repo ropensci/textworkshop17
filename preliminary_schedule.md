@@ -35,8 +35,8 @@ The idea of a roundtable is to get a set of 3-6 people working a lot in this are
 **Chairs:** I will try to set an example for what it means to be a "Chair" in session 1.  Chairs are also participants in the roundtable, but should think of some questions to get the discussion going.  I (Ken) will try to set an example in RT 1.
 
 
-| Number | Title                   | Participants   | Chair |
-|--------|-------------------------|----------------|-------|
+| Number  | Title                    | Participants    | Chair |
+|:--------|:-------------------------|:----------------|:------|
 | 1 | Tokenizers, strings, and pre-processing | Dmitriy, Lincoln, Marek, Matt | Ken |
 | 2 | POS tagging, spelling, hyphenation | Aki, Meik, Taylor | Jeroen |
 | 3 | Corpus management | Ingo, Kaspar, Paul, Tyler | Adam |
@@ -45,4 +45,4 @@ The idea of a roundtable is to get a set of 3-6 people working a lot in this are
 | 6 | Performance and foreign language implementations | Dmitriy, Jeroen, Kohei | Patrick |
 | 7 | Package interoperability | Arthur, Ingo, Ken, Lincoln, Meik | Thomas |
 
-<right><em>--KB</em></right>
+_--KB_
