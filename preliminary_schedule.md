@@ -38,8 +38,8 @@ The idea of a roundtable is to get a set of 3-6 people working a lot in this are
 | Number  | Title                    | Participants    | Chair |
 |:--------|:-------------------------|:----------------|:------|
 | 1 | Tokenizers, strings, and pre-processing | Dmitriy, Lincoln, Marek, Matt | Ken |
-| 2 | POS tagging, spelling, hyphenation | Aki, Meik, Taylor | Jeroen |
-| 3 | Corpus management | Ingo, Kaspar, Paul, Tyler | Adam |
+| 2 | POS tagging, spelling, hyphenation | Aki, Meik, Taylor, Kaspar | Jeroen |
+| 3 | Corpus management | Ingo, Paul, Tyler | Adam |
 | 4 | "Hard" languages | Aki, Haiyan, Heewon, Kohei | Sebastian |
 | 5 | Text statistics | Brandon, Dmitriy, Kevin, Meik, Patrick | Will |
 | 6 | Performance and foreign language implementations | Dmitriy, Jeroen, Kohei | Patrick |
