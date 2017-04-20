@@ -1,0 +1,152 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# Japanese Language Demo by amatsuo
+
+In this demo, I will show processing of Japanese Congressional Speech data through `quanteda` (and `kaigiroku`).
+
+### Install `kaigiroku` package
+
+This package is to access the API of Kokkai Kaigiroku, conference minutes of Japanese National Diet. The API documentation is available [here](http://kokkai.ndl.go.jp/api.html) (only in Japanese).
+
+You can install a developer version by:
+
+```{r, eval=FALSE}
+devtools::install_github("amatsuo/kaigiroku")
+```
+
+At the moment, the package provide only the functionality to download conference minutes of specific meetings (e.g. Budget Committee (予算委員会) and Plenary Meeting (本会議)) for a specified period. 
+
+
+## Demo for [textworkshop2017](https://github.com/ropensci/textworkshop17)
+
+
+### Download Conference Minutes
+
+```{r}
+require(kaigiroku)
+# the following line will download all speeches at plenary meetings in the 
+# Upper House (参議院) from Jan 1 to Jan 31, 2017. 
+plenary_speeches <- get_meeting(house = "Upper", startDate = "2017-01-01", 
+                                endDate = "2017-01-31", meetingName = "本会議")
+
+# the following line will download all speeches at the budget committee meetings in 
+# the lower house meetings
+budgetcom_speeches <- get_meeting(house = "Lower", sessionNumber = 185, 
+                                  meetingName = "予算委員会")
+
+# the following line will download all speeches at the budget committee meetings in 
+# the Prime Minister's Questions (or Party Leader Debate, "国家基本政策委員会合同審査会")
+# qt_speeches are used in the later part of demos
+qt_speeches <- get_meeting(house = "Both", sessionNumber = 190, 
+                           meetingName = "国家基本政策委員会合同審査会")
+head(qt_speeches)
+
+```
+
+### After getting speeches
+
+Using the power of `quanteda` (and `stringi` for boundary split), you can easily work with the texts and run analyses. 
+
+First, we need to remove unnecessary text sections unique to Japanese conforence minutes.
+
+```{r}
+require(quanteda)
+require(stringi)
+require(dplyr)
+
+# delete header
+qt_speeches <- qt_speeches[qt_speeches$speaker !="", ]
+# delete speeches by the chair of the meeting
+qt_speeches <- qt_speeches[grep("^○会長", qt_speeches$speech, invert = TRUE), ]
+
+# revmove non-speech part
+qt_speeches$speech <- stri_replace_all_regex(qt_speeches$speech, "^○\\S+\\s+", "")
+qt_speeches$speech <- stri_replace_all_regex(qt_speeches$speech, "（.+?）|〔.+?〕", "")
+qt_speeches$speech <- stri_replace_all_regex(qt_speeches$speech, "^\\s{2,}.+\n", "")
+```
+
+
+Now, generate corpus.
+```{r}
+# generate quanteda corpus object
+data_corpus_qtspeech <- corpus(qt_speeches$speech, 
+                               docnames = paste(qt_speeches$speaker, qt_speeches$speechOrder),
+                               docvars = qt_speeches[, c(1:5, 8:9)])
+summary(data_corpus_qtspeech)
+
+# kwicly look at some key terms
+kwic(data_corpus_qtspeech, "政府", window = 4) # government 
+kwic(data_corpus_qtspeech, "経済", window = 4) # ecnomy
+kwic(data_corpus_qtspeech, "成長", window = 4) # growth
+```
+
+Generate `dfm` and remove stopwords etc.
+```{r}
+require(readtext)
+# generate tokens and then dfm 
+data_dfm_qtspeech <- tokens(data_corpus_qtspeech, remove_punct = TRUE) %>% dfm()
+#topfeatures(data_dfm_qtspeech, n = 100)
+
+# remove stopwords and punctuations (using slothlib list http://www.dl.kuis.kyoto-u.ac.jp/slothlib/)
+# Warning: the word list removes potentially important words
+jpstopwords <- readtext("http://svn.sourceforge.jp/svnroot/slothlib/CSharp/Version1/SlothLib/NLP/Filter/StopWord/word/Japanese.txt")
+jpstopwords <- tokens(jpstopwords[jpstopwords != ""]) %>% as.character
+# remove stopwords
+data_dfm_qtspeech <- dfm_remove(data_dfm_qtspeech, features = jpstopwords)
+
+topfeatures(data_dfm_qtspeech, n = 20) # still a lot of unnecessary features
+
+# remove entries only with hiraganas (ひらがな)
+data_dfm_qtspeech <- dfm_remove(data_dfm_qtspeech, features = "^[あ-ん]+$",
+                                 valuetype = "regex")
+print(data_dfm_qtspeech)
+topfeatures(data_dfm_qtspeech, n = 20) #looks better
+
+par(family = "HiraKakuProN-W3") # this line is necessary if you use a Mac
+textplot_wordcloud(data_dfm_qtspeech, min.freq = 6, random.order = FALSE,
+                   rot.per = .25, 
+                   colors = RColorBrewer::brewer.pal(8,"Dark2"))
+
+```
+
+### Topicmodeling
+
+We are going to esitmate an LDA topic model. First regenerate dfm at sentence level
+```{r}
+data_corpus_qtspeech_sent <- corpus_reshape(data_corpus_qtspeech, to = "sentences")
+data_dfm_qtspeech_sent <- data_corpus_qtspeech_sent %>% tokens(remove_punct = TRUE) %>% dfm
+data_dfm_qtspeech_sent <- dfm_remove(data_dfm_qtspeech_sent, features = jpstopwords)
+
+# remove entries only with hiraganas (ひらがな)
+data_dfm_qtspeech_sent <- dfm_remove(data_dfm_qtspeech_sent, 
+                                     features = "^[あ-ん]+$",
+                                     valuetype = "regex")
+```
+
+Run the model
+```{r}
+require(topicmodels)
+
+model_lda_qt_speeches <- LDA(convert(data_dfm_qtspeech_sent, to = "topicmodels"), 
+                             k = 6)
+get_terms(model_lda_qt_speeches, 10)
+# topics(model_lda_qt_speeches, 3)
+
+```
+
+
+## Comments and feedback
+
+I welcome your comments and feedback.  Please file issues on the issues page, and/or send me comments at A.Matsuo@lse.ac.uk.

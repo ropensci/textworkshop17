@@ -1,0 +1,106 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+---
+title: "Application of quanteda: Chinese"
+date: "20/04/2017"
+---
+
+## Chinese Stop words: Baidu Stopwords
+```{r}
+require(readtext)
+require(stringi)
+require(quanteda)
+
+#read Chinese stop words
+csw <- readtext("ChineseStopWords.txt")
+csw <- unlist(as.list(tokens(csw$text, remove_punct=T)))
+
+# an example of using csw
+removeFeatures(tokens("中华人民共和国成立于1949 年"), csw)
+```
+
+## Example application on a set of text files in Chinese
+
+49 "REPORT ON THE WORK OF THE GOVERNMENT" by Premier of the State Council, 1954 - 2017 
+```{r}
+#read text files
+ctxt<-readtext("govReports/*.txt")
+
+#create corpus
+chCorpus <- corpus(ctxt)
+summary(chCorpus)
+
+#tokenize
+chtoks <- tokens(ctxt$text, remove_punct = TRUE)
+chtoks <- removeFeatures(chtoks, csw)
+
+#dfm
+chdfm <- dfm(chtoks)
+topfeatures(chdfm)
+#发展 经济 社会 建设 改革 人民 主义 工作 企业 国家 
+#5627 5036 4255 4248 2931 2897 2817 2642 2627 2595 
+
+# plot a word cloud
+set.seed(100)
+chdfm_tf <- dfm_trim(chdfm, min_count = 500)
+textplot_wordcloud(chdfm_tf, min.freq = 6, random.order = FALSE,
+                   rot.per = .25, 
+                   colors = RColorBrewer::brewer.pal(8,"Dark2"))
+```
+
+### Feature co-occurrence matrix
+```{r}
+#fcm within the same ducuments
+ch17txt <- readtext("govReports/2017*.txt")
+ch17toks <- tokens(ch17txt$text, remove_punct = TRUE)
+ch17toks <- removeFeatures(ch17toks, csw)
+chfcm <- fcm(ch17toks)
+
+#fcm within window
+chfcm <- fcm(ch17toks, context = "window")  # default window size = 5
+topfeatures(chfcm["改革", ])
+
+# fcm within window: "改革"+ “xx”
+chfcm <- fcm(ch17toks, context = "window", ordered = TRUE, tri = FALSE)  # default window size = 5
+topfeatures(chfcm["改革", ])
+```
+
+### Scaling Model
+```{r}
+wfm <- textmodel_wordfish(chdfm)
+y <- 1954:2017
+y<-y[-which(y==1963 | y==1961 |y==1962 | (y>1964 & y<1975) | y==1976 |y==1977)]
+plot(y, wfm@theta, xlab = "Year", ylab = "Position")
+```
+
+## Issues: English version vs. Chinese version
+```{r}
+en17txt <- readtext("ch_gov_report-2017.txt")
+en17toks <- tokens(en17txt$text, remove_punct = TRUE)
+en17toks <- removeFeatures(en17toks, stopwords(kind = "english"))
+
+topfeatures(dfm(ch17toks))
+topfeatures(dfm(en17toks))
+```
+
+### Segmentation issues
+```{r}
+head(kwic(ch17toks, "性", window = 3))
+```
+
+供给 侧 结构 | 性 | 改革 初 成效  initial success was achieved in supply-side structural reform.
+
+### Translation issues
+China： 我国 我们 国内 国家 全国....

@@ -17,7 +17,7 @@ require(quanteda)
 #>     View
 
 #read Chinese stop words
-csw <- readtext("/datadrive/GData/ChineseStopWords.txt")
+csw <- readtext("ChineseStopWords.txt")
 csw <- unlist(as.list(tokens(csw$text, remove_punct=T)))
 
 # an example of using csw
@@ -34,7 +34,7 @@ Example application on a set of text files in Chinese
 
 ``` r
 #read text files
-ctxt<-readtext("/datadrive/GData/政府工作报告/*.txt")
+ctxt<-readtext("govReports/*.txt")
 
 #create corpus
 chCorpus <- corpus(ctxt)
@@ -92,8 +92,8 @@ summary(chCorpus)
 #>       2016政府工作报告_李克强.txt  2565  12365       591
 #>       2017政府工作报告_李克强.txt  2501  11758       548
 #> 
-#> Source:  /home/wangh52/quanteda_2/tests/misc/* on x86_64 by wangh52
-#> Created: Thu Apr 20 18:25:24 2017
+#> Source:  /home/wangh52/textworkshop17/demos/chineseDemo/* on x86_64 by wangh52
+#> Created: Thu Apr 20 19:09:07 2017
 #> Notes:
 
 #tokenize
@@ -122,7 +122,7 @@ textplot_wordcloud(chdfm_tf, min.freq = 6, random.order = FALSE,
 
 ``` r
 #fcm within the same ducuments
-ch17txt <- readtext("/datadrive/GData/政府工作报告/2017*.txt")
+ch17txt <- readtext("govReports/2017*.txt")
 ch17toks <- tokens(ch17txt$text, remove_punct = TRUE)
 ch17toks <- removeFeatures(ch17toks, csw)
 chfcm <- fcm(ch17toks)
@@ -146,18 +146,16 @@ topfeatures(chfcm["改革", ])
 wfm <- textmodel_wordfish(chdfm)
 y <- 1954:2017
 y<-y[-which(y==1963 | y==1961 |y==1962 | (y>1964 & y<1975) | y==1976 |y==1977)]
-dev.off()
-#> null device 
-#>           1
 plot(y, wfm@theta, xlab = "Year", ylab = "Position")
 ```
+
 ![](README-unnamed-chunk-5-1.png)
 
 Issues: English version vs. Chinese version
 -------------------------------------------
 
 ``` r
-en17txt <- readtext("/datadrive/GData/ch_gov_report-2017.txt")
+en17txt <- readtext("ch_gov_report-2017.txt")
 en17toks <- tokens(en17txt$text, remove_punct = TRUE)
 en17toks <- removeFeatures(en17toks, stopwords(kind = "english"))
 
