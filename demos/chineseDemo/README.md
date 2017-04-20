@@ -1,3 +1,8 @@
+Application of quanteda: Chinese
+================================
+
+### *Haiyan Wang*
+
 Chinese Stop words: Baidu Stopwords
 -----------------------------------
 
@@ -92,8 +97,8 @@ summary(chCorpus)
 #>       2016政府工作报告_李克强.txt  2565  12365       591
 #>       2017政府工作报告_李克强.txt  2501  11758       548
 #> 
-#> Source:  /home/wangh52/textworkshop17/demos/chineseDemo/* on x86_64 by wangh52
-#> Created: Thu Apr 20 19:09:07 2017
+#> Source:  /Users/kbenoit/Dropbox (Personal)/GitHub/github.com/demos/chineseDemo/* on x86_64 by kbenoit
+#> Created: Thu Apr 20 19:30:01 2017
 #> Notes:
 
 #tokenize
