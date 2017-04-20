@@ -93,7 +93,7 @@ summary(chCorpus)
 #>       2017政府工作报告_李克强.txt  2501  11758       548
 #> 
 #> Source:  /home/wangh52/quanteda_2/tests/misc/* on x86_64 by wangh52
-#> Created: Thu Apr 20 17:50:22 2017
+#> Created: Thu Apr 20 18:25:24 2017
 #> Notes:
 
 #tokenize
@@ -146,9 +146,11 @@ topfeatures(chfcm["改革", ])
 wfm <- textmodel_wordfish(chdfm)
 y <- 1954:2017
 y<-y[-which(y==1963 | y==1961 |y==1962 | (y>1964 & y<1975) | y==1976 |y==1977)]
+dev.off()
+#> null device 
+#>           1
 plot(y, wfm@theta, xlab = "Year", ylab = "Position")
 ```
-
 ![](README-unnamed-chunk-5-1.png)
 
 Issues: English version vs. Chinese version
