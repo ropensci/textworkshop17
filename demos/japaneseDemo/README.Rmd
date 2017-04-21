@@ -114,7 +114,9 @@ data_dfm_qtspeech <- dfm_remove(data_dfm_qtspeech, features = "^[あ-ん]+$",
 print(data_dfm_qtspeech)
 topfeatures(data_dfm_qtspeech, n = 20) #looks better
 
-par(family = "HiraKakuProN-W3") # this line is necessary if you use a Mac
+if(Sys.info()['sysname'] == "Darwin"){ # Mac...
+  par(family = "HiraKakuProN-W3")
+}
 textplot_wordcloud(data_dfm_qtspeech, min.freq = 6, random.order = FALSE,
                    rot.per = .25, 
                    colors = RColorBrewer::brewer.pal(8,"Dark2"))

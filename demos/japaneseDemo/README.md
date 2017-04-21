@@ -104,7 +104,7 @@ First, we need to remove unnecessary text sections unique to Japanese conforence
 require(quanteda)
 #> Loading required package: quanteda
 #> quanteda version 0.9.9.50
-#> Using 7 of 8 cores for parallel computing
+#> Using 3 of 4 cores for parallel computing
 #> 
 #> Attaching package: 'quanteda'
 #> The following object is masked from 'package:utils':
@@ -219,8 +219,8 @@ summary(data_corpus_qtspeech)
 #>  国家基本政策委員会合同審査会   1号 2016-05-18          56   安倍晋三
 #>  国家基本政策委員会合同審査会   1号 2016-05-18          58 片山虎之助
 #> 
-#> Source:  /Users/akitaka/Dropbox/rProjects/kaigiroku/R/test_scripts/* on x86_64 by akitaka
-#> Created: Thu Apr 20 18:14:02 2017
+#> Source:  /Users/akitaka/Dropbox/KB_Projects/textworkshop17/demos/japaneseDemo/* on x86_64 by akitaka
+#> Created: Fri Apr 21 08:56:25 2017
 #> Notes:
 
 # kwicly look at some key terms
@@ -291,7 +291,9 @@ topfeatures(data_dfm_qtspeech, n = 20) #looks better
 #> 実質 改正   党 経済 国民 
 #>   19   19   18   18   17
 
-par(family = "HiraKakuProN-W3") # this line is necessary if you use a Mac
+if(Sys.info()['sysname'] == "Darwin"){ # Mac...
+  par(family = "HiraKakuProN-W3")
+}
 textplot_wordcloud(data_dfm_qtspeech, min.freq = 6, random.order = FALSE,
                    rot.per = .25, 
                    colors = RColorBrewer::brewer.pal(8,"Dark2"))
@@ -323,17 +325,17 @@ require(topicmodels)
 model_lda_qt_speeches <- LDA(convert(data_dfm_qtspeech_sent, to = "topicmodels"), 
                              k = 6)
 get_terms(model_lda_qt_speeches, 10)
-#>       Topic 1  Topic 2 Topic 3    Topic 4 Topic 5 Topic 6 
-#>  [1,] "改革"   "議論"  "消費"     "上げ"  "実質"  "憲法"  
-#>  [2,] "必要"   "総理"  "税"       "申"    "名目"  "平和"  
-#>  [3,] "国会"   "思い"  "〇"       "判断"  "言"    "主義"  
-#>  [4,] "お答え" "党"    "状況"     "自衛"  "侵略"  "草案"  
-#>  [5,] "社会"   "政権"  "増税"     "行使"  "賃金"  "改正"  
-#>  [6,] "保障"   "御"    "出"       "思い"  "総理"  "考え方"
-#>  [7,] "皆さん" "委員"  "引き上げ" "経済"  "財政"  "思い"  
-#>  [8,] "制度"   "審査"  "責任"     "権"    "戦争"  "貫"    
-#>  [9,] "党"     "思う"  "続"       "総理"  "言う"  "岡田"  
-#> [10,] "与党"   "予算"  "デフレ"   "認識"  "〇"    "御"
+#>       Topic 1  Topic 2  Topic 3  Topic 4 Topic 5    Topic 6   
+#>  [1,] "御"     "思い"   "憲法"   "議論"  "総理"     "消費"    
+#>  [2,] "思い"   "国会"   "上げ"   "総理"  "侵略"     "税"      
+#>  [3,] "自衛"   "改革"   "草案"   "言"    "必要"     "〇"      
+#>  [4,] "党"     "党首"   "主義"   "憲法"  "平和"     "状況"    
+#>  [5,] "示し"   "指摘"   "思い"   "審査"  "リー"     "増税"    
+#>  [6,] "権"     "お互い" "平和"   "責任"  "マン"     "経済"    
+#>  [7,] "国民"   "注目"   "申"     "聞"    "ショック" "思"      
+#>  [8,] "憲法"   "米"     "改正"   "考え"  "委員"     "続"      
+#>  [9,] "岡田"   "討論"   "自民党" "問題"  "戦争"     "引き上げ"
+#> [10,] "デフレ" "実質"   "貫"     "保障"  "主義"     "年間"
 # topics(model_lda_qt_speeches, 3)
 ```
 
