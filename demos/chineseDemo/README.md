@@ -13,8 +13,13 @@ require(stringi)
 #> Loading required package: stringi
 require(quanteda)
 #> Loading required package: quanteda
+<<<<<<< HEAD
 #> quanteda version 0.9.9.49
 #> Using 7 of 8 cores for parallel computing
+=======
+#> quanteda version 0.9.9.50
+#> Using 3 of 4 cores for parallel computing
+>>>>>>> e831682ee0a23a42115c84c50ffed23209b79702
 #> 
 #> Attaching package: 'quanteda'
 #> The following object is masked from 'package:utils':
@@ -97,8 +102,13 @@ summary(chCorpus)
 #>       2016政府工作报告_李克强.txt  2565  12365       591
 #>       2017政府工作报告_李克强.txt  2501  11758       548
 #> 
+<<<<<<< HEAD
 #> Source:  /Users/kbenoit/Dropbox (Personal)/GitHub/github.com/demos/chineseDemo/* on x86_64 by kbenoit
 #> Created: Fri Apr 21 14:16:21 2017
+=======
+#> Source:  /Users/akitaka/Dropbox/KB_Projects/textworkshop17/demos/chineseDemo/* on x86_64 by akitaka
+#> Created: Fri Apr 21 08:16:34 2017
+>>>>>>> e831682ee0a23a42115c84c50ffed23209b79702
 #> Notes:
 
 #tokenize
@@ -116,7 +126,13 @@ topfeatures(chdfm)
 # plot a word cloud
 set.seed(100)
 chdfm_tf <- dfm_trim(chdfm, min_count = 500)
+<<<<<<< HEAD
 par(family = "STSong")
+=======
+if(Sys.info()['sysname'] == "Darwin"){ # Mac...
+  par(family = "STSong") 
+}
+>>>>>>> e831682ee0a23a42115c84c50ffed23209b79702
 textplot_wordcloud(chdfm_tf, min.freq = 6, random.order = FALSE,
                    rot.per = .25, 
                    colors = RColorBrewer::brewer.pal(8,"Dark2"))
