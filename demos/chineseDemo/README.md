@@ -13,7 +13,7 @@ require(stringi)
 #> Loading required package: stringi
 require(quanteda)
 #> Loading required package: quanteda
-#> quanteda version 0.9.9.50
+#> quanteda version 0.9.9.49
 #> Using 7 of 8 cores for parallel computing
 #> 
 #> Attaching package: 'quanteda'
@@ -98,7 +98,7 @@ summary(chCorpus)
 #>       2017政府工作报告_李克强.txt  2501  11758       548
 #> 
 #> Source:  /Users/kbenoit/Dropbox (Personal)/GitHub/github.com/demos/chineseDemo/* on x86_64 by kbenoit
-#> Created: Thu Apr 20 19:30:01 2017
+#> Created: Fri Apr 21 14:16:21 2017
 #> Notes:
 
 #tokenize
@@ -116,6 +116,7 @@ topfeatures(chdfm)
 # plot a word cloud
 set.seed(100)
 chdfm_tf <- dfm_trim(chdfm, min_count = 500)
+par(family = "STSong")
 textplot_wordcloud(chdfm_tf, min.freq = 6, random.order = FALSE,
                    rot.per = .25, 
                    colors = RColorBrewer::brewer.pal(8,"Dark2"))
@@ -129,7 +130,7 @@ textplot_wordcloud(chdfm_tf, min.freq = 6, random.order = FALSE,
 #fcm within the same ducuments
 ch17txt <- readtext("govReports/2017*.txt")
 ch17toks <- tokens(ch17txt$text, remove_punct = TRUE)
-ch17toks <- removeFeatures(ch17toks, csw)
+ch17toks <- tokens_remove(ch17toks, csw)
 chfcm <- fcm(ch17toks)
 
 #fcm within window
@@ -162,7 +163,7 @@ Issues: English version vs. Chinese version
 ``` r
 en17txt <- readtext("ch_gov_report-2017.txt")
 en17toks <- tokens(en17txt$text, remove_punct = TRUE)
-en17toks <- removeFeatures(en17toks, stopwords(kind = "english"))
+en17toks <- tokens_remove(en17toks, stopwords(kind = "english"))
 
 topfeatures(dfm(ch17toks))
 #> 发展 改革 经济 推进 建设   性 社会 政策 全面 企业 

@@ -57,6 +57,7 @@ topfeatures(chdfm)
 # plot a word cloud
 set.seed(100)
 chdfm_tf <- dfm_trim(chdfm, min_count = 500)
+par(family = "STSong")
 textplot_wordcloud(chdfm_tf, min.freq = 6, random.order = FALSE,
                    rot.per = .25, 
                    colors = RColorBrewer::brewer.pal(8,"Dark2"))
@@ -67,7 +68,7 @@ textplot_wordcloud(chdfm_tf, min.freq = 6, random.order = FALSE,
 #fcm within the same ducuments
 ch17txt <- readtext("govReports/2017*.txt")
 ch17toks <- tokens(ch17txt$text, remove_punct = TRUE)
-ch17toks <- removeFeatures(ch17toks, csw)
+ch17toks <- tokens_remove(ch17toks, csw)
 chfcm <- fcm(ch17toks)
 
 #fcm within window
@@ -91,7 +92,7 @@ plot(y, wfm@theta, xlab = "Year", ylab = "Position")
 ```{r}
 en17txt <- readtext("ch_gov_report-2017.txt")
 en17toks <- tokens(en17txt$text, remove_punct = TRUE)
-en17toks <- removeFeatures(en17toks, stopwords(kind = "english"))
+en17toks <- tokens_remove(en17toks, stopwords(kind = "english"))
 
 topfeatures(dfm(ch17toks))
 topfeatures(dfm(en17toks))
