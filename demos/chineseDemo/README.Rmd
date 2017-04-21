@@ -57,13 +57,9 @@ topfeatures(chdfm)
 # plot a word cloud
 set.seed(100)
 chdfm_tf <- dfm_trim(chdfm, min_count = 500)
-<<<<<<< HEAD
-par(family = "STSong")
-=======
 if(Sys.info()['sysname'] == "Darwin"){ # Mac...
   par(family = "STSong") 
 }
->>>>>>> e831682ee0a23a42115c84c50ffed23209b79702
 textplot_wordcloud(chdfm_tf, min.freq = 6, random.order = FALSE,
                    rot.per = .25, 
                    colors = RColorBrewer::brewer.pal(8,"Dark2"))
