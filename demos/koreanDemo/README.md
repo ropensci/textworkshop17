@@ -1,7 +1,7 @@
 Korean Language Demo by Heewon
 ==============================
 
--   The New Year's Day Speech is an important document to understand their plans and changes in goals. By comparing these documents with the previous year, you can see the route changes.
+-   The North Korea New Year's Day Speech is an important document to understand their plans and changes in goals. By comparing these documents with the previous year, we can see the route changes.
 -   I will show simple example of `Hangul(Korean)` processing using 2017 North Korea new year speech with [KoNLP](https://CRAN.R-project.org/package=KoNLP).
 -   `KoNLP`
     -   POS Tagger and Morphological Analyzer for Korean text based research. It provides tools for corpus linguistics research such as Keystroke converter, Hangul automata, Concordance, and Mutual Information. It also provides a convenient interface for users to apply, edit and add morphological dictionary selectively.
